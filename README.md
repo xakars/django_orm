@@ -4,6 +4,18 @@
 ``` 
 pip install -r requirements.txt
 ``` 
+Перед тем как запускать скрипт, необходимо установить зависимости в файле .env, такие как:
+``` 
+SECRET_KEY=
+ENGINE=
+HOST=
+PORT=
+DB_NAME=
+DB_USER=
+PASSWORD=
+DEBUG=
+``` 
+
 Запустите скрипт командой:
 ```
 python main.py
