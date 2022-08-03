@@ -13,11 +13,11 @@ INSTALLED_APPS = ['datacenter']
 
 SECRET_KEY = os.getenv('SECRET_KEY')
 
-DEBUG = os.getenv('DEBUG') in ('TRUE', 'True', 'true')
+DEBUG = env.bool("ENABLE_DEBUG", False)
 
 ROOT_URLCONF = 'project.urls'
 
-ALLOWED_HOSTS = env.list("ALLOWED_HOSTS")
+ALLOWED_HOSTS = env.list("ALLOWED_HOSTS", '*')
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
