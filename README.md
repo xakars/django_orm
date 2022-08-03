@@ -7,16 +7,12 @@ pip install -r requirements.txt
 Перед тем как запускать скрипт, необходимо установить переменные окружения в файле .env, такие как:
 ``` 
 SECRET_KEY=
-ENGINE=
-HOST=
-PORT=
-DB_NAME=
-DB_USER=
-PASSWORD=
+ALLOWED_HOSTS=
+DATABASE_URL=postgres://USER:PASSWORD@HOST:PORT/NAME
 DEBUG=
 ``` 
 
 Запустите скрипт командой:
 ```
-python main.py
+python manage.py runserver
 ```
